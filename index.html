@@ -13,12 +13,12 @@
 body, h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 h1 {font-family: "Pacifico", cursive;}
 .w3-jumbo {font-size: 95px!important;}
-.w3-half img {
-        opacity: 1.0;
-      }     
+
 .w3-half img:hover {
         opacity: 0.5;
+        visibility: visible;
       }
+
 .w3-row-padding img {margin-bottom: 12px}
 
 form {
@@ -142,10 +142,6 @@ label.light {
     <i class="fa fa-scissors w3-xxlarge"></i>
     <p>SERVICES</p>
   </a>
-  <a href="#products" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-magic w3-xxlarge"></i>
-    <p>PRODUCTS</p>
-  </a>
   <a href="#book" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-phone w3-xxlarge"></i>
     <p>BOOK ONLINE</p>
@@ -157,7 +153,6 @@ label.light {
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About Us</a>
     <a href="#services" class="w3-bar-item w3-button" style="width:25% !important">Services</a>
-    <a href="#products" class="w3-bar-item w3-button" style="width:25% !important">Products</a>
     <a href="#book" class="w3-bar-item w3-button" style="width:25% !important">Book</a>
   </div>
 </div>
@@ -175,134 +170,125 @@ label.light {
   <div class="w3-content w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Who We Are</h2>
     <hr style="width:300px" class="w3-opacity">
-    <h5 style="padding-bottom:50px;">Some text about us. Some text about us. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    <h5 style="padding-bottom:50px;">Some text about us. Some text about us. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </h5>
-    <!-- End About Section -->
-    <!-- Services Section -->
-    <div class="w3-content w3-padding-64" id="services">
-      <h2><span class="w3-padding-16 w3-text-light-grey">Services We Offer</span></h2>
+   
+    <div class="w3-content w3-padding-64">
+      <h2><span class="w3-padding-16 w3-text-light-grey">Meet the Team</span></h2>
       <hr style="width:300px" class="w3-opacity">
     
       <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-        <h3>Haircut</h3>
+        <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <h3>Chris Fox</h3>
         <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
       </div>
 
       <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-        <h3>Color</h3>
+        <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <h3>Chris Fox</h3>
         <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
       </div>
 
       <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-        <h3>Special Events</h3>
+        <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <h3>Chris Fox</h3>
         <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
       </div>
 
       <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-        <h3>Everything Else</h3>
+        <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <h3>Chris Fox</h3>
         <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
       </div>
     </div>
-    <!-- End of Services Section -->
-    <br><br><br>
-      
-  
-    <!-- Products Section -->
-    <div class="w3-content w3-padding-64;" id="products">
-      <h2><span class="w3-padding-16 w3-text-light-grey">Products</span></h2>
-      <hr style="width:300px" class="w3-opacity">
-      <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half">
-          <a href="#"><img src="assets/image-1.jpg" style="width:100%"></a>
-          <a href="#"><img src="assets/image-2.jpg" style="width:100%"></a>
-          <a href="#"><img src="assets/image-3.jpg" style="width:100%"></a>
-        </div>
-
-        <div class="w3-half">
-          <a href="#"><img src="assets/image-4.jpg" style="width:100%"></a>
-          <a href="#"><img src="assets/image-5.jpg" style="width:100%"></a>
-          <a href="#"><img src="assets/image-6.jpg" style="width:100%"></a>
-          <a href="#"><img src="assets/image-7.jpg" style="width:100%"></a>
-        </div>
-      </div>
-      <!-- End photo grid -->
-    </div>
-    <!-- End Products Section -->
-
-      <!-- Testimonials -->
-      <h3 class="w3-padding-24 w3-text-light-grey";>Testimonials</h3>  
-      <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <h5><span class="w3-large w3-margin-right">Chris Fox</span></h5>
-      <h5>Lorem ipsum dolor corrupti illo facilis nemo ex ratione laboriosam nihil consequuntur aspernatur!.</h5><br>
-      
-      <img src="assets/Rebecca Flex.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <h5><span class="w3-large w3-margin-right">Rebecca Flex</span></h5>
-      <h5 style="padding-bottom:50px;">No one is better than Hair Salon!</h5>
-    
-    <!-- Contact Section -->
-      <div class="w3-content w3-padding-64" id="book">
-        <div id="container">  
-          <form action="index.html" method="post">
-            <fieldset>
-          <legend><span class="number">1</span>Book Online</legend>   
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name" placeholder="Jane Doe" required pattern="[a-zA-Z0-9]+">
-      
-              <label for="mail">Email:</label>
-              <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
-      
-              <label for="tel">Contact Num:</label>
-              <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" name="user_num">
-      
-            </fieldset>
-      
-            <fieldset>
-              <legend><span class="number">2</span>Appointment Details</legend>
-              <label for="appointment_for">Appointment for:</label>
-              <select id="appointment_for" name="appointment_for" required>
-                <option value="coffee">Haircut</option>
-                <option value="meeting">Color</option>
-                <option value="Business">Style for Event</option>
-                <option value="lunch">Condition Treatment</option>
-                <option value="skype">Perm/Straighten</option>
-                <option value="movie">Extensions</option>
-                <option value="couple_date">Virtual Consultation</option>
-              </select>
-              <label for="appointment_description">Appointment Description:</label>
-              <textarea id="appointment_description" name="appointment_description" placeholder="I wish to make an appointment for a haircut and style"></textarea>
-              <label for="date">Date:</label>
-              <input type="date" name="date" value="" required></input>
-              <br>
-              <label for="time">Time:</label>
-              <input type="time" name="time" value="" required></input>
-              <br> 
-            </fieldset>
-            <button type="submit">Request Appointment</button>
-          </form>
-        </div>
-      </div>
-    <!-- End Contact Section -->
-    <div class="w3-padding-64 w3-content" id="contact">
-      <h2 class="w3-text-light-grey">Contact Us</h2>
-      <hr style="width:200px" class="w3-opacity">
-  
-      <div class="w3-section">
-        <h5><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</h5>
-        <h5><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</h5>
-        <h5><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</h5>
-      </div><br>
-    </div>
-    <!-- Footer -->
-    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-    </footer>
-    <!-- End footer -->
   </div>
-<!-- END PAGE CONTENT -->
+      
+  
+    <!-- Services Section -->
+  <div class="w3-content w3-padding-64" id="services">
+    <h2 class="w3-padding-16 w3-text-light-grey">Services</h2>
+    <hr style="width:300px" class="w3-opacity">
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="#"><img src="assets/image-1.jpg" style="width:100%"></a>
+        <a href="#"><img src="assets/image-2.jpg" style="width:100%"></a>
+        <a href="#"><img src="assets/image-3.jpg" style="width:100%"></a>
+      </div>
+
+      <div class="w3-half">
+        <a href="#"><img src="assets/image-4.jpg" style="width:100%"></a>
+        <a href="#"><img src="assets/image-5.jpg" style="width:100%"></a>
+        <a href="#"><img src="assets/image-6.jpg" style="width:100%"></a>
+        <a href="#"><img src="assets/image-7.jpg" style="width:100%"></a>
+      </div>
+    </div> 
+  </div>
+    
+
+    <!-- Booking Section -->
+  <div class="w3-content w3-padding-64" id="book">
+    <div id="container">  
+      <form action="index.html" method="post">
+        <fieldset>
+      <legend><span class="number">1</span>Name & Contact Information</legend>   
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" placeholder="Jane Doe" required pattern="[a-zA-Z0-9]+">
+  
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+  
+          <label for="tel">Contact Num:</label>
+          <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" name="user_num">
+  
+        </fieldset>
+  
+        <fieldset>
+          <legend><span class="number">2</span>Appointment Details</legend>
+          <label for="appointment_for">Appointment for:</label>
+          <select id="appointment_for" name="appointment_for" required>
+            <option value="coffee">Haircut</option>
+            <option value="meeting">Color</option>
+            <option value="Business">Style for Event</option>
+            <option value="lunch">Condition Treatment</option>
+            <option value="skype">Perm/Straighten</option>
+            <option value="movie">Extensions</option>
+            <option value="couple_date">Virtual Consultation</option>
+          </select>
+          <label for="appointment_description">Appointment Description:</label>
+          <textarea id="appointment_description" name="appointment_description" placeholder="I wish to make an appointment for a haircut and style"></textarea>
+          <label for="date">Date:</label>
+          <input type="date" name="date" value="" required></input>
+          <br>
+          <label for="time">Time:</label>
+          <input type="time" name="time" value="" required></input>
+          <br> 
+        </fieldset>
+        <button type="submit">Request Appointment</button>
+      </form>
+    </div>
+  </div>
+
+    <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content" id="contact">
+    <h2 class="w3-text-light-grey">Contact Us</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section w3-text-grey">
+      <h5><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</h5>
+      <h5><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</h5>
+      <h5><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</h5>
+    </div><br>
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </footer>
+  
+
 </div>
 
 </body>
