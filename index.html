@@ -8,8 +8,25 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+h1 {font-family: "Pacifico", cursive;}
+.w3-jumbo {font-size: 95px!important;}
+
+
+
+.w3-half img {
+        opacity: 1.0;
+      }
+      
+.w3-half img:hover {
+        opacity: 0.5;
+      }
+
+
+
+
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
@@ -24,32 +41,32 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="assets/photographer1.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
+  <a href="#"><img src="assets/photographer1.jpg" style="width:100%"></a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+    <p>ABOUT US</p>
   </a>
-  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>GALLERY</p>
+  <a href="#services" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-scissors w3-xxlarge"></i>
+    <p>SERVICES</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
+  <a href="#products" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-magic w3-xxlarge"></i>
+    <p>PRODUCTS</p>
+  </a>
+  <a href="#book" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-phone w3-xxlarge"></i>
+    <p>BOOK ONLINE</p>
   </a>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#gallery" class="w3-bar-item w3-button" style="width:25% !important">GALLERY</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About Us</a>
+    <a href="#services" class="w3-bar-item w3-button" style="width:25% !important">Services</a>
+    <a href="#products" class="w3-bar-item w3-button" style="width:25% !important">Products</a>
+    <a href="#book" class="w3-bar-item w3-button" style="width:25% !important">Book</a>
   </div>
 </div>
 
@@ -57,120 +74,116 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">A</span> Cut Above</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Hair</span> Salon</h1>
     <p>Hair  |  Artisty</p>
     <img src="/assets/photographer1.jpg" alt="girl" class="w3-image" width="992" height="1108">
   </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <!-- About Section -->
+  <div class="w3-content w3-text-grey w3-padding-64" id="about">
 
-    <h2 class="w3-text-light-grey">I'm Marley Hayes</h2>
+    <h2 class="w3-text-light-grey">Who We Are</h2>
     <hr style="width:300px" class="w3-opacity">
     <p style="padding-bottom:50px;">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
-    <div class="w3-justify ">
-      <h2><span class="w3-padding-16 w3-text-light-grey">What I Offer</span></h2>
+    <!-- End About Section -->
+    <!-- Services Section -->
+    <div class="w3-content" id="services">
+      <h2><span class="w3-padding-16 w3-text-light-grey">Services We Offer</span></h2>
       <hr style="width:300px" class="w3-opacity">
     </div>
     <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-      <h3>Consultation</h3>
+      <h3>Haircut</h3>
       <p style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
     </div>
 
     <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-      <h3>Hair Cut & Style</h3>
+      <h3>Color</h3>
       <p style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
     </div>
 
     <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-      <h3>Style for Events</h3>
+      <h3>Special Events</h3>
       <p style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
     </div>
 
     <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-      <h3>Treatments</h3>
+      <h3>Everything Else</h3>
       <p style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
     </div>
-  
+    <!-- End of Services Section -->
     <br><br><br>
-    
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox</span> -from New York City</p>
-    <p>Lorem ipsum dolor corrupti illo facilis nemo ex ratione laboriosam nihil consequuntur aspernatur!.</p><br>
-    
-    <img src="assets/Rebecca Flex.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex</span> -from Seattle</p>
-    <p>No one is better than Marley Hayes!</p>
-  <!-- End About Section -->
-  </div>
+      
   
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="gallery">
-    <h2 class="w3-text-light-grey">Gallery</h2>
-    <hr style="width:300px" class="w3-opacity">
+    <!-- Products Section -->
+    <div class="w3-padding-64 w3-content" id="products">
+      <h2 class="w3-text-light-grey">Products</h2>
+      <hr style="width:300px" class="w3-opacity">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="assets/image1.jpg" style="width:100%">
-        <img src="assets/image2.jpg" style="width:100%">
-        <img src="assets/image3.jpg" style="width:100%">
-      </div>
+        <div class="w3-half">
+          <a href="#"><img src="assets/image-1.png" style="width:100%"></a>
+          <a href="#"><img src="assets/image-2.png" style="width:100%"></a>
+          <a href="#"><img src="assets/image-3.png" style="width:100%"></a>
+        </div>
 
-      <div class="w3-half">
-        <img src="assets/image4.jpg" style="width:100%">
-        <img src="assets/image5.jpg" style="width:100%">
-        <img src="assets/image6.jpg" style="width:100%">
-        <img src="assets/image7.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+        <div class="w3-half">
+          <a href="#"><img src="assets/image-4.png" style="width:100%"></a>
+          <a href="#"><img src="assets/image-5.png" style="width:100%"></a>
+          <a href="#"><img src="assets/image-6.png" style="width:100%"></a>
+          <a href="#"><img src="assets/image-7.png" style="width:100%"></a>
+        </div>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
+    <!-- End photo grid -->
+    <!-- End Products Section -->
+  
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:300px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div><br>
-    <h3>Let's set up a consultation! Send me a message:</h3>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="book">
+      <h2 class="w3-text-light-grey">Book Online</h2>
+      <hr style="width:300px" class="w3-opacity">
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p><br>
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+        </div><br>
+      </form>
+      <!-- End Contact Section -->
+      <!-- Testimonials -->
+      <h3 class="w3-padding-24 w3-text-light-grey">Testimonials</h3>  
+      <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Chris Fox</span> -from New York City</p>
+      <p>Lorem ipsum dolor corrupti illo facilis nemo ex ratione laboriosam nihil consequuntur aspernatur!.</p><br>
+      
+      <img src="assets/Rebecca Flex.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Rebecca Flex</span> -from Seattle</p>
+      <p>No one is better than Hair Salon!</p>
+    </div>
   
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    
-  <!-- End footer -->
-  </footer>
-
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </footer>
+    <!-- End footer -->
+  </div>
 <!-- END PAGE CONTENT -->
 </div>
 
