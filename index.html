@@ -13,29 +13,121 @@
 body, h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 h1 {font-family: "Pacifico", cursive;}
 .w3-jumbo {font-size: 95px!important;}
-
-
-
 .w3-half img {
         opacity: 1.0;
-      }
-      
+      }     
 .w3-half img:hover {
         opacity: 0.5;
       }
-
-
-
-
 .w3-row-padding img {margin-bottom: 12px}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 30px 20px;
+  background:rgb(204, 204, 204);
+  border-radius: 8px;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: auto;
+  outline: 0;
+  padding: 8px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+
+{
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: grey;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid grey;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: grey;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+  form {
+    max-width: 480px;
+  }
+
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
+.w3-sidebar {width: 120px;background:#222;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 </head>
+
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
@@ -74,56 +166,55 @@ h1 {font-family: "Pacifico", cursive;}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Hair</span> Salon</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Hair Salon</h1>
     <p>Hair  |  Artisty</p>
     <img src="/assets/photographer1.jpg" alt="girl" class="w3-image" width="992" height="1108">
   </header>
 
     <!-- About Section -->
   <div class="w3-content w3-text-grey w3-padding-64" id="about">
-
     <h2 class="w3-text-light-grey">Who We Are</h2>
     <hr style="width:300px" class="w3-opacity">
-    <p style="padding-bottom:50px;">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    <h5 style="padding-bottom:50px;">Some text about us. Some text about us. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    </h5>
     <!-- End About Section -->
     <!-- Services Section -->
-    <div class="w3-content" id="services">
+    <div class="w3-content w3-padding-64" id="services">
       <h2><span class="w3-padding-16 w3-text-light-grey">Services We Offer</span></h2>
       <hr style="width:300px" class="w3-opacity">
-    </div>
-    <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-      <h3>Haircut</h3>
-      <p style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
+    
+      <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
+        <h3>Haircut</h3>
+        <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+      </div>
 
-    <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-      <h3>Color</h3>
-      <p style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
+      <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
+        <h3>Color</h3>
+        <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+      </div>
 
-    <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-      <h3>Special Events</h3>
-      <p style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
+      <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
+        <h3>Special Events</h3>
+        <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+      </div>
 
-    <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-      <h3>Everything Else</h3>
-      <p style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
+        <h3>Everything Else</h3>
+        <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+      </div>
     </div>
     <!-- End of Services Section -->
     <br><br><br>
       
   
     <!-- Products Section -->
-    <div class="w3-padding-64 w3-content" id="products">
-      <h2 class="w3-text-light-grey">Products</h2>
+    <div class="w3-content w3-padding-64;" id="products">
+      <h2><span class="w3-padding-16 w3-text-light-grey">Products</span></h2>
       <hr style="width:300px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half">
           <a href="#"><img src="assets/image-1.png" style="width:100%"></a>
           <a href="#"><img src="assets/image-2.png" style="width:100%"></a>
@@ -136,51 +227,78 @@ h1 {font-family: "Pacifico", cursive;}
           <a href="#"><img src="assets/image-6.png" style="width:100%"></a>
           <a href="#"><img src="assets/image-7.png" style="width:100%"></a>
         </div>
+      </div>
+      <!-- End photo grid -->
     </div>
-    <!-- End photo grid -->
     <!-- End Products Section -->
-  
 
-    <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content w3-text-grey" id="book">
-      <h2 class="w3-text-light-grey">Book Online</h2>
-      <hr style="width:300px" class="w3-opacity">
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p><br>
-        <div class="w3-section">
-          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-        </div><br>
-      </form>
-      <!-- End Contact Section -->
       <!-- Testimonials -->
-      <h3 class="w3-padding-24 w3-text-light-grey">Testimonials</h3>  
+      <h3 class="w3-padding-24 w3-text-light-grey";>Testimonials</h3>  
       <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Chris Fox</span> -from New York City</p>
-      <p>Lorem ipsum dolor corrupti illo facilis nemo ex ratione laboriosam nihil consequuntur aspernatur!.</p><br>
+      <h5><span class="w3-large w3-margin-right">Chris Fox</span> -from New York City</h5>
+      <h5>Lorem ipsum dolor corrupti illo facilis nemo ex ratione laboriosam nihil consequuntur aspernatur!.</h5><br>
       
       <img src="assets/Rebecca Flex.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Rebecca Flex</span> -from Seattle</p>
-      <p>No one is better than Hair Salon!</p>
-    </div>
+      <h5><span class="w3-large w3-margin-right">Rebecca Flex</span> -from Seattle</h5>
+      <h5 style="padding-bottom:50px;">No one is better than Hair Salon!</h5>
+    
+    <!-- Contact Section -->
+      <div class="w3-content w3-padding-64" id="book">
+        <div id="container">  
+          <form action="index.html" method="post">
+            <fieldset>
+          <legend><span class="number">1</span>Book Online</legend>   
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" placeholder="Jane Doe" required pattern="[a-zA-Z0-9]+">
+      
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+      
+              <label for="tel">Contact Num:</label>
+              <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" name="user_num">
+      
+            </fieldset>
+      
+            <fieldset>
+              <legend><span class="number">2</span>Appointment Details</legend>
+              <label for="appointment_for">Appointment for:</label>
+              <select id="appointment_for" name="appointment_for" required>
+                <option value="coffee">Haircut</option>
+                <option value="meeting">Color</option>
+                <option value="Business">Style for Event</option>
+                <option value="lunch">Condition Treatment</option>
+                <option value="skype">Perm/Straighten</option>
+                <option value="movie">Extensions</option>
+                <option value="couple_date">Virtual Consultation</option>
+              </select>
+              <label for="appointment_description">Appointment Description:</label>
+              <textarea id="appointment_description" name="appointment_description" placeholder="I wish to make an appointment for a haircut and style"></textarea>
+              <label for="date">Date:</label>
+              <input type="date" name="date" value="" required></input>
+              <br>
+              <label for="time">Time:</label>
+              <input type="time" name="time" value="" required></input>
+              <br> 
+            </fieldset>
+            <button type="submit">Request Appointment</button>
+          </form>
+        </div>
+      </div>
+    <!-- End Contact Section -->
+    <div class="w3-padding-64 w3-content" id="contact">
+      <h2 class="w3-text-light-grey">Contact Us</h2>
+      <hr style="width:200px" class="w3-opacity">
   
+      <div class="w3-section">
+        <h5><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</h5>
+        <h5><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</h5>
+        <h5><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</h5>
+      </div><br>
+    </div>
     <!-- Footer -->
     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
       <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
     </footer>
     <!-- End footer -->
   </div>
