@@ -8,22 +8,24 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet"><style>
 body, h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-h1 {font-family: "Pacifico", cursive;}
+h1 {font-family: 'Zen Kurenaido', sans-serif;}
 .w3-jumbo {font-size: 95px!important;}
 
-.w3-half img:hover {
+/* .w3-half img:hover {
         opacity: 0.5;
         visibility: visible;
-      }
+      } */
 
 .w3-row-padding img {margin-bottom: 12px}
+.mySlides {display:none}
 
 form {
   max-width: 300px;
-  margin: 10px auto;
+  margin: 100px auto;
   padding: 30px 20px;
   background:rgb(204, 204, 204);
   border-radius: 8px;
@@ -142,10 +144,16 @@ label.light {
     <i class="fa fa-scissors w3-xxlarge"></i>
     <p>SERVICES</p>
   </a>
+  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-camera w3-xxlarge"></i>
+    <p>GALLERY</p>
+  </a>
+  
   <a href="#book" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-phone w3-xxlarge"></i>
     <p>BOOK ONLINE</p>
   </a>
+  
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
@@ -153,6 +161,7 @@ label.light {
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About Us</a>
     <a href="#services" class="w3-bar-item w3-button" style="width:25% !important">Services</a>
+    <a href="#gallery" class="w3-bar-item w3-button" style="width:25% !important">Gallery</a>
     <a href="#book" class="w3-bar-item w3-button" style="width:25% !important">Book</a>
   </div>
 </div>
@@ -161,7 +170,7 @@ label.light {
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Hair Salon</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> HAIR SALON</h1>
     <p>Hair  |  Artisty</p>
     <img src="/assets/photographer1.jpg" alt="girl" class="w3-image" width="992" height="1108">
   </header>
@@ -170,9 +179,8 @@ label.light {
   <div class="w3-content w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Who We Are</h2>
     <hr style="width:300px" class="w3-opacity">
-    <h5 style="padding-bottom:50px;">Some text about us. Some text about us. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <h5>Some text about us. Some text about us. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
     </h5>
    
     <div class="w3-content w3-padding-64">
@@ -180,60 +188,78 @@ label.light {
       <hr style="width:300px" class="w3-opacity">
     
       <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-        <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <h3>Chris Fox</h3>
-        <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+        <img src="assets/Chris.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <h3>Chris</h3>
+        <h5 style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
       </div>
 
       <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-        <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <h3>Chris Fox</h3>
-        <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+        <img src="assets/Julie.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <h3>Julie</h3>
+        <h5 style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
       </div>
 
       <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-        <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <h3>Chris Fox</h3>
-        <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+        <img src="assets/Rebecca.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <h3>Becky</h3>
+        <h5 style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
       </div>
 
       <div class="w3-col l3 m6 w3-black w3-text-grey w3-container w3-padding-16">
-        <img src="assets/Chris Fox.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <h3>Chris Fox</h3>
-        <h5 style="padding-bottom:100px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+        <img src="assets/Raquel.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <h3>Raquel</h3>
+        <h5 style="padding-bottom:50px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
       </div>
     </div>
   </div>
       
-  
     <!-- Services Section -->
-  <div class="w3-content w3-padding-64" id="services">
-    <h2 class="w3-padding-16 w3-text-light-grey">Services</h2>
-    <hr style="width:300px" class="w3-opacity">
+    <div class="w3-content w3-text-grey w3-padding-64" id="services">
+      <h2 class="w3-text-light-grey">Services</h2>
+      <hr style="width:300px" class="w3-opacity">
     
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <a href="#"><img src="assets/image-1.jpg" style="width:100%"></a>
-        <a href="#"><img src="assets/image-2.jpg" style="width:100%"></a>
-        <a href="#"><img src="assets/image-3.jpg" style="width:100%"></a>
+        <a href="#"><img src="assets/image-1.png" style="width:100%"></a>
+        <a href="#"><img src="assets/image-2.png" style="width:100%"></a>
       </div>
 
       <div class="w3-half">
-        <a href="#"><img src="assets/image-4.jpg" style="width:100%"></a>
-        <a href="#"><img src="assets/image-5.jpg" style="width:100%"></a>
-        <a href="#"><img src="assets/image-6.jpg" style="width:100%"></a>
-        <a href="#"><img src="assets/image-7.jpg" style="width:100%"></a>
+        <a href="#"><img src="assets/image-4.png" style="width:100%"></a>
+        <a href="#"><img src="assets/image-5.png" style="width:100%"></a>
+        <a href="#"><img src="assets/image-6.png" style="width:100%"></a>
       </div>
     </div> 
   </div>
-    
+  
+    <!-- Slideshow -->
+  <div class="w3-content w3-text-grey w3-padding-64" id="gallery">
+    <h2 class="w3-text-light-grey">Gallery</h2>
+    <hr style="width:300px" class="w3-opacity">
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="/assets/image-8.png" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="/assets/image-9.png" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="/assets/image-10.png" style="width:100%">
+    </div>
 
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-light-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-grey"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-grey"></i></div>
+    </div>
+  </div>
+  
     <!-- Booking Section -->
   <div class="w3-content w3-padding-64" id="book">
     <div id="container">  
       <form action="index.html" method="post">
         <fieldset>
-      <legend><span class="number">1</span>Name & Contact Information</legend>   
+          <legend>Book Online</Name></legend>   
           <label for="name">Name:</label>
           <input type="text" id="name" name="user_name" placeholder="Jane Doe" required pattern="[a-zA-Z0-9]+">
   
@@ -242,23 +268,22 @@ label.light {
   
           <label for="tel">Contact Num:</label>
           <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" name="user_num">
-  
+          
         </fieldset>
   
         <fieldset>
-          <legend><span class="number">2</span>Appointment Details</legend>
+          <legend>Appointment Details</legend>
           <label for="appointment_for">Appointment for:</label>
           <select id="appointment_for" name="appointment_for" required>
-            <option value="coffee">Haircut</option>
-            <option value="meeting">Color</option>
-            <option value="Business">Style for Event</option>
-            <option value="lunch">Condition Treatment</option>
-            <option value="skype">Perm/Straighten</option>
-            <option value="movie">Extensions</option>
-            <option value="couple_date">Virtual Consultation</option>
+            <option>Haircut</option>
+            <option>Color</option>
+            <option>Treatments</option>
+            <option>Perm/Straighten</option>
+            <option>Extensions</option>
+
           </select>
           <label for="appointment_description">Appointment Description:</label>
-          <textarea id="appointment_description" name="appointment_description" placeholder="I wish to make an appointment for a haircut and style"></textarea>
+          <textarea id="appointment_description" name="appointment_description" placeholder="I wish to make an appointment for a haircut"></textarea>
           <label for="date">Date:</label>
           <input type="date" name="date" value="" required></input>
           <br>
@@ -269,27 +294,52 @@ label.light {
         <button type="submit">Request Appointment</button>
       </form>
     </div>
-  </div>
-
+  
     <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content" id="contact">
+  <div class="w3-padding-64 w3-content w3-center" id="contact">
     <h2 class="w3-text-light-grey">Contact Us</h2>
-    <hr style="width:200px" class="w3-opacity">
     <div class="w3-section w3-text-grey">
-      <h5><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</h5>
+      <h5><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</h5> 
       <h5><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</h5>
       <h5><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</h5>
     </div><br>
   </div>
 
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <footer class="w3-content w3-center w3-padding-64 w3-text-grey w3-xlarge">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
   </footer>
   
-
 </div>
-
+  <script>
+    // Slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+  </script>
 </body>
 </html>
